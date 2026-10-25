@@ -1,0 +1,121 @@
+:root {
+  /* Default: Executive Dark Terminal Theme */
+  --page: #090D16;
+  --page-gradient: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14, 165, 233, 0.08), transparent 70%), #090D16;
+  --surface: #0F172A;
+  --surface-elevated: #141F36;
+  --surface-muted: #1A2642;
+  --surface-hover: #1E2D4D;
+  --ink: #F8FAFC;
+  --ink-secondary: #CBD5E1;
+  --muted: #8494A7;
+  --muted-light: #475569;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-active: rgba(14, 165, 233, 0.5);
+
+  /* Series Colors — High-Contrast Neon Accents */
+  --primary: #38BDF8;
+  --primary-hover: #0EA5E9;
+  --primary-subtle: rgba(56, 189, 248, 0.12);
+  --forecast: #818CF8;
+  --forecast-subtle: rgba(129, 140, 248, 0.14);
+  --actual: #10B981;
+  --actual-subtle: rgba(16, 185, 129, 0.14);
+
+  /* Status Tokens */
+  --warning: #F59E0B;
+  --warning-subtle: rgba(245, 158, 11, 0.1);
+  --warning-border: rgba(245, 158, 11, 0.3);
+  --danger: #EF4444;
+  --danger-subtle: rgba(239, 68, 68, 0.12);
+  --danger-border: rgba(239, 68, 68, 0.35);
+  --success: #10B981;
+  --success-subtle: rgba(16, 185, 129, 0.12);
+  --focus: #38BDF8;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 30px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 40px -6px rgba(0, 0, 0, 0.6);
+  --shadow-modal: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] {
+  /* Crisp Modern Light Theme */
+  --page: #F8FAFC;
+  --page-gradient: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14, 165, 233, 0.05), transparent 70%), #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-elevated: #F1F5F9;
+  --surface-muted: #E2E8F0;
+  --surface-hover: #F8FAFC;
+  --ink: #0F172A;
+  --ink-secondary: #334155;
+  --muted: #64748B;
+  --muted-light: #94A3B8;
+  --border: #E2E8F0;
+  --border-subtle: #EDF2F7;
+  --border-active: #0EA5E9;
+
+  /* Series Colors */
+  --primary: #0284C7;
+  --primary-hover: #0369A1;
+  --primary-subtle: #E0F2FE;
+  --forecast: #4F46E5;
+  --forecast-subtle: #EEF2FF;
+  --actual: #059669;
+  --actual-subtle: #ECFDF5;
+
+  /* Status */
+  --warning: #D97706;
+  --warning-subtle: #FEF3C7;
+  --warning-border: #FCD34D;
+  --danger: #DC2626;
+  --danger-subtle: #FEE2E2;
+  --danger-border: #FCA5A5;
+  --success: #059669;
+  --success-subtle: #ECFDF5;
+  --focus: #0284C7;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-card: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1);
+  --shadow-modal: 0 20px 25px -5px rgba(15, 23, 42, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
